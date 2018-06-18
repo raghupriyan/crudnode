@@ -31,9 +31,13 @@ app.use(bodyParser.urlencoded({extended: true}))
 MongoClient.connect(mongourl, (err, client) => {
 	if(err) return console.log(err)
 	db = client.db('firstcurd')
+<<<<<<< HEAD
 	app.listen(80, () => {
+=======
+	app.listen(8081, () => {
+>>>>>>> 112e1039de83c7b634170e178a42e90619d8b2e8
 		
-		console.log('listening on 3000')
+		console.log('listening on 8081')
 		
 	})
 	
