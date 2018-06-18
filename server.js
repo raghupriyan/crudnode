@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 MongoClient.connect(mongourl, (err, client) => {
 	if(err) return console.log(err)
 	db = client.db('firstcurd')
-	app.listen(3000, () => {
+	app.listen(80, () => {
 		
 		console.log('listening on 3000')
 		
